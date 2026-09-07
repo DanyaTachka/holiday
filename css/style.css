@@ -19,3 +19,83 @@ a{
 
     height: 100vh;
 }
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    padding: 0 15px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-image: url('../img/header-desktop@1x.png');
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    text-align: center;
+}
+.logo{
+    margin-top: 0;
+}
+.header-top{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 120px;
+    padding: 20px 0;
+}
+
+.button{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    background: none;
+    border-radius: 20px;
+}
+.button.without{
+    border: none;
+}
+.button.fill-red{
+    background-color: #FF4E50;
+    border-color: #FF4E50;
+    width: 100%;
+}
+
+
+/* Телефон альбомний: від 576px */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+/* Планшет: від 768px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* ПК: від 992px */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Великий монітор: від 1200px */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
